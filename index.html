@@ -2,110 +2,208 @@
 <html lang="en">
 
 <head>
-    <title>Freecodecamp Trombones</title>
-    <meta name="Trombones" discription="trombones and prices">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/db05450523.js" crossorigin="anonymous"></script>
+    <meta name="">
+    <title>CSS Documentation</title>
 </head>
 
 <body>
-    <header id="header">
-        <div id="identity">
-            <img src="https://static.thenounproject.com/png/29081-200.png" alt="trombone-logo" id="header-img"
-            height="50px">
-            <h2 id="original">Original Trombones</h2>
-        </div>
-        
-        <nav id="nav-bar">
-            <a href="#tenor" class="nav-link">Features</a>
-            <a href="#bass" class="nav-link">How it works</a>
-            <a href="#valve" class="nav-link">Pricing</a>
-        </nav>
-    </header>
-    <main>
-        <div class="trombone features" id="features">
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <strong>Mount-Everest Enterprises</strong><br>
-                <input placeholder="Enter your email address" id="email" type="email" name="email"><br>
-                <input value="GET CONNECTED" type="submit" id="submit">
-            </form>
-            <div>
-                <div>
-                    <i class="fa-solid fa-fire-flame-curved feature"></i>
-                    <strong class="heading-features" id="trom">TROMBONE</strong>
-                    <p>The trombone is a brass horn musical instrument. It is similar to a large trumpet, except
-                        the player pushes and pulls on its slide to change the length of the tube.</p>
-                </div>
-                <div>
-                    <section>
-                        <i class="fa-solid fa-truck feature"></i>
-                        <strong class="heading-features" id="type">Types</strong>
-                        <p>There are a lot of types of trombones. Each one is for different playing ranges (how high
-                            or low you play).
-                            There are contrabass trombones, bass trombones, tenor bass trombones, tenor trombones,
-                            alto trombones, soprano trombones,
-                            and piccolo trombones. These are the different types of trombones, arranged according to
-                            general usage.</p>
-                        <ol>
-                            <li> Tenor trombone</li>
-                            <li> Bass trombone</li>
-                            <li> Alto trombone</li>
-                            <li> Contrabass trombone</li>
-                            <li> Soprano trombone</li>
-                            <li> Valve trombone</li>
-                            </ul>
-                    </section>
-                </div>
-                <div>
-                    <i class="fa-solid fa-battery-full feature"></i>
-                    <strong class="heading-features" id="quality">Quality Assurance</strong>
+    <nav id="navbar">
+        <header><strong>Documentation</strong></header>
+        <ul>
+            <li><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li>
+            <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+            <li><a class="nav-link" href="#Comments">Comments</a></li>
+            <li><a class="nav-link" href="#Colors">Colors</a></li>
+            <li><a class="nav-link" href="#Backgrounds">Backgrounds</a></li>
+            <li><a class="nav-link" href="#Borders">Borders</a></li>
+            <li><a class="nav-link" href="#Margins">Margins</a></li>
+            <li><a class="nav-link" href="#Padding">Padding</a></li>
+            <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+            <li><a class="nav-link" href="#Height_and_Weight">Height and Weight</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="CSS_Introduction">
+            <header><strong>CSS Introduction</strong></header>
+            <article>
+                <p>
+                    CSS is the language we use to style a Web page.
+                </p>
+                <h1>What is CSS?</h1>
+                <ul>
+                    <li>
+                        CSS stands for Cascading Style Sheets.
+                    </li>
+                    <li>
+                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+                    </li>
+                    <li>
+                        CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+                    </li>
+                    <li>External stylesheets are stored in CSS files.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Selectors">
+            <header><strong>Selectors</strong></header>
+            <article>
+                <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+
+                <p>We can divide CSS selectors into five categories:</p>
+                <ul>
+                    <li>Simple selectors (select elements based on name, id, class).</li>
+                    <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                    <li>Pseudo-class selectors (select elements based on a certain state).</li>
+                    <li>Pseudo-elements selectors (select and style a part of an element).</li>
+                    <li> Attribute selectors (select elements based on an attribute or attribute value).</li>
+                </ul>
+                <p>
+                    This page will explain the most basic CSS selectors.</p>
+                    <h2>Example:</h2>
+                    <p>Here, all 'p' elements on the page will be center-aligned, with a red text color: </p>
+                    <code>
+                        P {
+                        text-align: center;
+                        color: red;
+                        }
+                    </code>
+            </article>
+        </section>
+        <section class="main-section" id="Comments">
+            <header><strong>Comments</strong></header>
+            <article>
+                <p>
+                    CSS comments are not displayed in the browser, but they can help document your source code. Comments
+                    are used to explain the code, and may help when you edit the source code at a later date.
+                    Comments are ignored by browsers.
+                </p>
+                <h3>Example:</h3>
+                <p>You can add comments wherever you want in the code:</p>
+                <code>
+                    p {
+                        color: red; /* Set text color to red*/
+                    }
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Colors">
+            <header><strong>Colors</strong></header>
+                <article>
                     <p>
-                        We establish quality standards with our customers. We will ensure there is damage control;
-                        Implemention of Corrective and Preventive Actions.</p>
-                </div>
-            </div>
-            <div class="video">
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/UkR3hfZ30NA"
-                    title="Trombone player gets lit at football game @West Texas A&amp;M University" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
-            </div>
-            <div class="trombone-prices" id="prices">
-                <section class="container" id="tenor">
-                    <h1>TENOR TROMBONE</h1>
-                    <strong>$700-Price</strong>
+                        Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. In CSS,
+                        a color can be specified by using a predefined color name such as tomato, orange, gray. CSS/HTML
+                        support 140 standard color names.
+                    </p>
+                    <h4>Example:</h4>
+                    <code>
+                        body { 
+                            color: blue;
+                        }
+                        h1 { 
+                            color: green
+                        }
+                    </code>
+                </article>
+        </section>
+        <section class="main-section" id="Backgrounds">
+            <header><strong>Backgrounds</strong></header>
+                <article>
+                    <p>
+                        The CSS background properties are used to add background effects for elements.
+                    </p>
+                </article>
+        </section>
+        <section class="main-section" id="Borders">
+            <header><strong>Borders</strong></header>
+                <article>
+                    <p>
+                        The CSS border properties allow you to specify the style, width, color of an element's border.
+                    </p>
+                    <p>CSS Border Style</p>
                     <ul>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
+                        <li>Dotted: Defines a dotted border.</li>
+                        <li>Dashed: Defines a dashed border.</li>
+                        <li>Groove: Defines a 3D grooved border. The effect depends on the border-color value.</li>
+                        <li>None: Defines no border.</li>
+                        <li>Hidden: Defines a hidden border.</li>
                     </ul>
-                    <input value="SELECT" type="submit" class="submit-button">
-                </section>
-                <section class="container" id="bass">
-                    <h1>BASS TROMBONE</h1>
-                    <strong>$800-Price</strong>
+                    <h5>Example:</h5>
+                    <p>Demonstration of the different border styles:</p>
+                    <code>
+                        p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+                    </code>
+                </article>
+            </header>
+        </section>
+        <section class="main-section" id="Margins">
+            <header><strong>Margins</strong></header>
+                <article>
+                    <p>
+                        The CSS margin properties are used to create space around elements, outside of any defined
+                        borders. With CSS, you have full control over the margins.
+                        There are properties for setting the margin for each side of an element (top, right, bottom, and
+                        left).
+                    </p>
+                    <h6>Example:</h6>
+                    <p>Set different margins for all four sides of a 'p' element:</p>
+                    <code>
+                        p {
+                        margin-top: 100px;
+                        margin-bottom: 100px;
+                        margin-right: 150px;
+                        margin-left: 80px;
+                        }
+                    </code>
+                </article>
+        </section>
+        <section class="main-section" id="Padding">
+            <header><strong>Padding</strong></header>
+                <article>
+                    <p>
+                        Padding is used to create space around an element's content, inside of any defined borders. The
+                        CSS padding properties are used to generate space around an element's content, inside of any
+                        defined borders.
+                        With CSS, you have full control over the padding. There are properties for setting the padding
+                        for each side of an element (top, right, bottom, and left).
+                    </p>
+                </article>
+        </section>
+        <section class="main-section" id="Box_Model">
+            <header><strong>Box Model</strong></header>
+                <article>
+                    <p>
+                        All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking
+                        about design and layout.
+                        The CSS box model is essentially a box that wraps around every HTML element. It consists of:
+                        content, padding, borders and margins.
+                    </p>
+                </article>
+        </section>
+        <section class="main-section" id="Height_and_Weight">
+            <header><strong>Height and Weight</strong></header>
+                <article>
+                    <p>
+                        The CSS height and width properties are used to set the height and width of an element. The CSS
+                        max-width property is used to set the maximum width of an element.
+                        The height and width properties are used to set the height and width of an element. The height
+                        and width properties may have the following values:
                     <ul>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
+                        <li>Auto - This is default. The browser calculates the height and width.</li>
+                        <li>Length - Defines the height/width in px, cm, etc.</li>
+                        <li>% - Defines the height/width in percent of the containing block.</li>
+                        <li>Initial - Sets the height/width to its default value.</li>
+                        <li>Inherit - The height/width will be inherited from its parent value.</li>
                     </ul>
-                    <input value="SELECT" type="submit" class="submit-button">
-                </section>
-                <section class="container" id="valve">
-                    <h1>VALVE TROMBONE</h1>
-                    <strong>$900-Price</strong>
-                    <ul>
-                        <li>Plays similar to a Trumpet.</li>
-                        <li>Great for Jazz Bands.</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
-                    </ul>
-                    <input value="SELECT" type="submit" class="submit-button">
-                </section>
-            </div>
+                    </p>
+                </article>
+        </section>
+    </main>
     </main>
 </body>
 
-</html>
+</html> 
