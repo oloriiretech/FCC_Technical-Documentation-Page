@@ -1,0 +1,140 @@
+:root{ 
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-dark-yellow: #e47200;
+    --color-light-dark-yellow: #e5de00;
+    --color-gray: #e4e3e5;
+    --color-grey: #C5C6C7;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+body {
+    background-color: var(--color-gray);
+    font-family: sans-serif, verdana;
+    padding: 10px 10px 30px 10px;
+}
+
+#identity, #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+#header {
+    position: fixed;
+    padding: 15px 10px;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-gray);
+}
+.nav-link {
+    margin-right: 25px;
+}
+main {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color:var(--color-black);
+}
+
+form {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#email {
+    margin-top: 20px;
+    padding-left: 20px;
+    border: 2px solid var( --color-dark-yellow);
+    border-radius: 20px;
+    width: 20%;
+    height: 25px;
+}
+
+#submit {
+    background-color: var(--color-light-dark-yellow);
+   padding: 0 10px 0 10px;
+    cursor: pointer;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit-button {
+    background-color: var(--color-light-dark-yellow);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    }
+#submit:hover, .submit-button:hover {
+    background-color: var(--color-dark-yellow);
+}
+.video {
+    text-align: center;
+    margin: 30px;
+}
+
+.feature {
+       font-size: 40px;
+       color: var(--color-dark-yellow);
+       margin-left: 250px;
+}
+
+.heading-features {
+    margin: 40px;
+}
+
+.trombone-prices {
+        display: flex;
+        justify-content: center;
+        }
+    p {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+   .container {
+    border: 2px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-right: 2%;
+    }
+    ol {
+        margin-left: 375px;  
+        margin-top: 20px;
+        list-style-type: disc;
+    }
+    h1 {
+    background-color: var(--color-grey);
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px;
+    }
+       ul {
+        list-style: none;
+        margin-top: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+       font-size: 100%;
+    }
+
+    @media screen and (max-width:600px) {
+        body {
+            background-color: var(--color-white);
+            font-size: 30px;
+        }
+    }
